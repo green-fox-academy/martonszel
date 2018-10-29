@@ -5,9 +5,12 @@
 //
 // Surface Area: 600
 // Volume: 1000
-let height = 10
-let lenght = 10
-let depth = 10
+let a : number = 10 ;
+let b : number = 10;
+let c : number = 10 ;
 
-console.log(2*(height*lenght)+2*(lenght*depth)+2*(height*depth));
-console.log(height*lenght*depth);
+
+let volume : number = a*b*c
+console.log(volume)
+let surface : number = 2*(a*b+a*c+b*c)
+console.log(surface)
