@@ -1,10 +1,12 @@
-let a: number = 12;
-a = a + 4;
-console.log(a); // Prints 16
+'use strict';
 
-let b: number = 12;
-b = b - 4;
-console.log(b); // Prints 8
+let r: number = 12;
+r = r + 4;
+console.log(r); // Prints 16
+
+let t: number = 12;
+t = t - 4;
+console.log(t); // Prints 8
 
 let c: number = 12;
 c *= 3;
