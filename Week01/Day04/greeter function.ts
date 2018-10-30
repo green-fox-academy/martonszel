@@ -7,7 +7,7 @@ export{};
 
 let name = 'Greenfox';
 
-function greet ( greet = "hello" , name = "greenfox"){
+function greet ( greet = "hello" ){
 console.log(greet, name);
 }
 
