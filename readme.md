@@ -5,4 +5,4 @@
 
 [Webpage Repo](https://github.com/martonszel/martonszel.github.io)
 
-[Webpage](file:///C:/Users/M%C3%A1rton/Greenfox/martonszel/Week01/Day01/index.html)
+[Webpage](https://martonszel.github.io/)
