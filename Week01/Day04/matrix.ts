@@ -11,8 +11,7 @@
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
 
-let mylist = [[0,0, 0, 1],[0, 0, 1, 0],[0, 1, 0, 0], [1, 0, 0, 0] ] ;
-
+let mylist = [[0, 0, 0, 1],[0, 0, 1, 0],[0, 1, 0, 0],[1, 0, 0, 0] ] ;
 
 
 console.log(mylist);
