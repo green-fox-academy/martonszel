@@ -13,6 +13,6 @@ function draw(x, y, w, h) {
 }
 
 for (let i = 0; i < 5; i++){
-    ctx.fillStyle = `rgb(0, 0, ${(255 / 50) * i}`;
+    ctx.fillStyle = `rgb(0, 0, ${255  * i}`;
     draw(i + 100, (i * 50) + 20, i * 10, i * 10);
 }
