@@ -15,7 +15,7 @@ function squareFifty(x, y) {
     ctx.fillRect(x, y, 50, 50);
   }
   
-  for (let i: number = 1; i <= 3; i++) {
+  for (let i = 1; i <= 3; i++) {
     squareFifty(i * 75, i * 100);
   }
 
