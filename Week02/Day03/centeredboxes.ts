@@ -13,7 +13,7 @@ const ctx = canvas.getContext('2d');
 
 function draw(x) {
     ctx.fillRect(canvas.width / 2 - x / 2, canvas.height / 2 - x / 2, x, x);
-    ctx.fillStyle = `rgb(${x},200,150)`;
+    ctx.fillStyle = `rgb(${x},150,200)`;
   }
   
   for (let i= 4; i > 1; i--) {
