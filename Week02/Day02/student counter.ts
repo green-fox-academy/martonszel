@@ -18,7 +18,18 @@ function candies(item){
     return prev + next;
   }
   console.log(students.map(candies).reduce(sum));
+  
 
 // create a function that takes a list of students and logs:
 // - Sum of the age of people who have lass than 5 candies
 
+function sumAge(age) {
+  let sumage 
+  age.forEach(e => {
+    if (e.candies < 5) {
+      sumage += e.age;
+    }
+  });
+  return sumage;
+}
+console.log(sumAge(students));
