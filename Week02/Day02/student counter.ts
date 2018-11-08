@@ -1,6 +1,6 @@
 'use strict';
 
-const students: any[] = [
+let students: any[] = [
   {name: 'Theodor', age: 3, candies: 2},
   {name: 'Paul', age: 9.5, candies: 2},
   {name: 'Mark', age: 12, candies: 5},
