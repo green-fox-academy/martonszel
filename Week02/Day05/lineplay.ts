@@ -1,7 +1,9 @@
 'use strict';
 
+
 const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
+
 
 for (let i = 0 ; i < 20 ; i ++){
 
