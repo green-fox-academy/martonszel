@@ -54,11 +54,10 @@ let j: number = 1521;
 if(j%3===0 || j%5===0){console.log(true)}
 else {console.log(false)};
 
-let k: string = 'Apple';
-var i = 1 ;
-// fill the k variable with its content 4 time
 
-for (i = 0; i < 4; i++) {
+let k: string = 'Apple';
+// fill the k variable with its content 4 time
+for (let i = 0; i < 4; i++) {
     console.log(k)
 }
 

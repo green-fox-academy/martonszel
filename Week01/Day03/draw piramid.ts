@@ -15,10 +15,10 @@ let lineCount: number = 4;
 for (let i = 0; i < lineCount; i++) {
     let str = '';
     for (let j = 1; j < lineCount-i; j++) {
-      str = str + ' ';
+      str += ' ';
     }
     for (let k = 1; k <= (2*i+1); k++) {
-      str = str + '*';
+      str += '*';
     }
     console.log(str);
   }

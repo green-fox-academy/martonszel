@@ -11,12 +11,9 @@ export{}
 // The triangle should have as many lines as lineCount is
 
 let lineCount: number = 4;
-let any: string = '';
+let star: string = '';
 
-for(let y = 1; y <= lineCount; y++){
-for(let x = 0; x < y; x++){
-any = any + '*';
-}
-console.log(any)
-any = '';
+for(let i: number = 1; i <= lineCount; i++){
+  star+='*';
+  console.log(star);
 }

@@ -16,13 +16,10 @@
 // 10 * 15 = 150
 
 'use strict';
-export{};
+export { };
 
 let number: number = 15;
-let b ;
-let i ;
 
-
-for (i=1 ; i <=10 ; i++){
-    console.log(i + "*" + number + " =", i*number )
+for (let i: number = 1; i <= 10; i++) {
+    console.log(i + " " + "*" + " " + number + " =", i * number)
 }
