@@ -8,7 +8,7 @@ export{};
 let name = 'Greenfox';
 
 function greet ( greet = "hello" ){
-console.log(greet, name);
+return greet + name;
 }
 
-greet(); 
+console.log(greet()); 

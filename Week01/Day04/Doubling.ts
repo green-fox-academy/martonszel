@@ -6,7 +6,7 @@ export{};
 
 let baseNum = 123 ;
 
-function doubling () {
-  console.log(baseNum*2)
+function doubling (baseNum) {
+  return baseNum*2;
 }
-doubling();
+console.log(doubling(baseNum));
