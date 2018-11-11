@@ -14,16 +14,15 @@ const ctx = canvas.getContext('2d');
 let skyGradient = ctx.createLinearGradient(0, 0, 0, 600);
 skyGradient.addColorStop(0, "#000033");
 skyGradient.addColorStop(1, "#000099");
+
 ctx.fillStyle = skyGradient;
 ctx.fillRect(0, 0, 600, 400);
 
-
-
-for (var i=0; i<300; i++) { 
-    var xCo = Math.floor(Math.random() * 600); 
+for (var i = 0; i < 300; i++) {
+    var xCo = Math.floor(Math.random() * 600);
     var yCo = Math.floor(Math.random() * 400);
-    ctx.fillRect(xCo,yCo,1,1) 
-    ctx.fillStyle = `rgb(${105+i},${105+i},${105+i})`;
+    ctx.fillRect(xCo, yCo, 1, 1)
+    ctx.fillStyle = `rgb(${105 + i},${105 + i},${105 + i})`;
 }
 
 let moonGradient = ctx.createRadialGradient(450, 80, 10, 450, 100, 50);
@@ -31,6 +30,6 @@ moonGradient.addColorStop(0.3, "#ffffff");
 moonGradient.addColorStop(0.9, "#ffff66");
 ctx.fillStyle = moonGradient;
 ctx.beginPath();
-ctx.arc(450, 100, 50, 0, Math.PI*2);
+ctx.arc(450, 100, 50, 0, Math.PI * 2);
 ctx.fill();
 moonContext.closePath();
