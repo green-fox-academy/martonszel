@@ -1,5 +1,5 @@
 'use strict';
-export{}
+export { }
 
 // Write a program that draws a triangle like this:
 //
@@ -10,10 +10,11 @@ export{}
 //
 // The triangle should have as many lines as lineCount is
 
-let lineCount: number = 4;
-let star: string = '';
 
-for(let i: number = 1; i <= lineCount; i++){
-  star+='*';
-  console.log(star);
+
+let lineCount: number = 4;
+
+for (let i = '*'; i.length <= lineCount; i += '*') {
+  console.log(i);
 }
+
