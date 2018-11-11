@@ -4,6 +4,7 @@
 
 let far: string[] = ['bo', 'anacond', 'koal', 'pand', 'zebr'];
 
+
 let map1 = far.map(x => x + 'a');
 
 console.log(map1);

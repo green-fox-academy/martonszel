@@ -23,13 +23,14 @@ function candies(item){
 // create a function that takes a list of students and logs:
 // - Sum of the age of people who have lass than 5 candies
 
-function sumAge(age) {
-  let sumage 
-  age.forEach(e => {
-    if (e.candies < 5) {
-      sumage += e.age;
+function ageOfStudents(list: any[]): void {
+  let ageSum: number = 0;
+  for (let i: number = 0; i < list.length; i++) {
+    if (list[i].candies < 5) {
+      ageSum = ageSum + list[i].age;
     }
-  });
-  return sumage;
+  }
+  console.log(`The age of people who have less than 5 canidies  ${ageSum}.`);
 }
-console.log(sumAge(students));
+
+ageOfStudents(students);

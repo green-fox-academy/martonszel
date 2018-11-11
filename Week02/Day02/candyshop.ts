@@ -1,12 +1,27 @@
 'use strict';
 
 let shopItems = ['Cupcake', 2, 'Brownie', false];
+let shopItems2= ['Kaka', 'Futyi', 2, false, 'Marci2', 'Krémes',2 ]; 
 
 // Accidentally we added "2" and "false" to the array.
 // Your task is to change from "2" to "Croissant" and change from "false" to "Ice cream"
 // No, don't just remove the items :)
 // Create a function called sweets() which takes the list as a parameter.
 // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
+
+/*function sweets (list: any[]){
+
+    for(let i=0; i <list.length ; i++) {
+        if ( typeof list[i] === "number"  ){
+            list[i] = "croissant"
+        }
+else if (typeof list[i] === "boolean"){
+list[i] = "ice cream"
+}
+}
+    }*/
+
+
 let index = shopItems.indexOf(2);
 if (~index) {
     shopItems[index] = "Croissant";
@@ -17,3 +32,7 @@ if (~index2) {
 }
 
     console.log(shopItems);
+   // sweets(shopItems);
+    console.log(shopItems)
+   // sweets(shopItems2)
+    console.log(shopItems2)

@@ -4,6 +4,21 @@
 
 let girls: string[] = ['Eve', 'Ashley', 'Claire', 'Kat', 'Jane'];
 let boys: string[] = ['Joe', 'Fred', 'Tom', 'Todd', 'Neef', 'Jeff'];
+
+function makingMatches(girls: string[], boys: string[]){
+let matchList: string[] = [];
+
+for (let i=0 ; i < girls.length; i++ ) {
+    matchList.push(girls[i], boys[i])
+}
+    return matchList
+}
+
+console.log(makingMatches(girls, boys));
+
+
+
+/*
 let result = [] ;
 let i, l = Math.min(girls.length, boys.length);
 
@@ -16,4 +31,4 @@ result.push(girls[i], boys[i]);
 result.push(...girls.slice(l), ...boys.slice(l));
 
 console.log(result);
-
+*/
