@@ -7,6 +7,7 @@
 //
 // Sum: 22, Average: 4.4
 
+2,3,4,5,8
 
 function integer(a,b,c,d,e) {
 
@@ -24,4 +25,4 @@ function integer(a,b,c,d,e) {
   
   integer(2,3,4,5,8);
 
-// 2,3,5,8
+// 2,3,,4,5,8
