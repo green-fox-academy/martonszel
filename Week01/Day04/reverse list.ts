@@ -13,7 +13,8 @@ export {};
 
 let numList = [3, 4, 5, 6, 7]
 let newarray= [];
-for (let i = 0 ; i < numList.length; i++) {
-    numList[i] = newarray[i].slice();
+for (let i = numList.length-1 ; i >= 0; i--) {
+    newarray.push(numList[i]);
 }
-
+console.log(numList[0]);
+console.log(newarray);
