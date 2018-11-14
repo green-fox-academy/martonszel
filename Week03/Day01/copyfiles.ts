@@ -11,5 +11,5 @@ function copyFile(fileName1 , Filaname2){
     return true }
     else { console.log(false)}
 }
-copyFile('my-ile.txt', 'copy.txt');
+copyFile('my-file.txt', 'copy.txt');
 
