@@ -29,7 +29,6 @@ function matrix(num) {
     }
 }
 
-
 matrix(4);
 
 
