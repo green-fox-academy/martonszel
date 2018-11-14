@@ -8,19 +8,18 @@ let shopItems = ['Cupcake', 2, 'Brownie', false];
 // Create a function called sweets() which takes the list as a parameter.
 // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
 
-function sweets(shopItems: any[]) {
+function sweets(shopItems: any[]): void {
     for (let i = 0; i < shopItems.length; i++) {
         if (typeof shopItems[i] === "number") {
-            shopItems[i] = "croissant"
+            shopItems[i] = "croissant";
         }
-        else if (typeof shopItems[i] === "boolean") {
-            shopItems[i] = "ice cream"
-        }
-        else {
-            shopItems[i];
+        if (typeof shopItems[i] === "boolean") {
+            shopItems[i] = "ice cream";
         }
     }
-    console.log(sweets(shopItems));
+}
+sweets(shopItems);
+console.log(shopItems);
     // sweets(shopItems);
 
     /*
@@ -33,4 +32,3 @@ function sweets(shopItems: any[]) {
      shopItems[index2] = "Ice cream";
  }
  */
-}

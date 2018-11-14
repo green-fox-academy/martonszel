@@ -27,7 +27,7 @@ function ageOfStudents(list: any[]): void {
   let ageSum: number = 0;
   for (let i: number = 0; i < list.length; i++) {
     if (list[i].candies < 5) {
-      ageSum = ageSum + list[i].age;
+      ageSum += list[i].age;
     }
   }
   console.log("The age of people who have less than 5 candies " + ageSum );
