@@ -1,7 +1,6 @@
 'use strict';
 
 let shopItems = ['Cupcake', 2, 'Brownie', false];
-let shopItems2= ['Kaka', 'Futyi', 2, false, 'Marci2', 'Krémes',2 ]; 
 
 // Accidentally we added "2" and "false" to the array.
 // Your task is to change from "2" to "Croissant" and change from "false" to "Ice cream"
@@ -9,30 +8,29 @@ let shopItems2= ['Kaka', 'Futyi', 2, false, 'Marci2', 'Krémes',2 ];
 // Create a function called sweets() which takes the list as a parameter.
 // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
 
-/*function sweets (list: any[]){
-
-    for(let i=0; i <list.length ; i++) {
-        if ( typeof list[i] === "number"  ){
-            list[i] = "croissant"
+function sweets(shopItems: any[]) {
+    for (let i = 0; i < shopItems.length; i++) {
+        if (typeof shopItems[i] === "number") {
+            shopItems[i] = "croissant"
         }
-else if (typeof list[i] === "boolean"){
-list[i] = "ice cream"
-}
-}
-    }*/
+        else if (typeof shopItems[i] === "boolean") {
+            shopItems[i] = "ice cream"
+        }
+        else {
+            shopItems[i];
+        }
+    }
+    console.log(sweets(shopItems));
+    // sweets(shopItems);
 
-
-let index = shopItems.indexOf(2);
-if (~index) {
-    shopItems[index] = "Croissant";
+    /*
+ let index = shopItems.indexOf(2);
+ if (~index) {
+     shopItems[index] = "Croissant";
+ }
+ let index2 = shopItems.indexOf(false);
+ if (~index2) {
+     shopItems[index2] = "Ice cream";
+ }
+ */
 }
-let index2 = shopItems.indexOf(false);
-if (~index2) {
-    shopItems[index2] = "Ice cream";
-}
-
-    console.log(shopItems);
-   // sweets(shopItems);
-    console.log(shopItems)
-   // sweets(shopItems2)
-    console.log(shopItems2)

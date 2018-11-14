@@ -26,10 +26,10 @@ candyFilter(students);
 // create a function that takes a list of students and logs: 
 //  - how many candies they have on average
 
-function averageCandies(stud: any[]): void {
-  let sumCandies: number = 0;
+function averageCandies(students: any[]): void {
+  let sumCandies: number = 0 ;
   for (let i: number = 0; i < students.length; i++) {
-    sumCandies = sumCandies + students[i].candies;
+    sumCandies += students[i].candies;
   }
   let avgCandies: number = sumCandies / students.length;
   console.log(`Our students have ${avgCandies} candies on average.`);

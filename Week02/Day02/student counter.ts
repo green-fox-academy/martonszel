@@ -30,7 +30,7 @@ function ageOfStudents(list: any[]): void {
       ageSum = ageSum + list[i].age;
     }
   }
-  console.log(`The age of people who have less than 5 canidies  ${ageSum}.`);
+  console.log("The age of people who have less than 5 candies " + ageSum );
 }
 
 ageOfStudents(students);
