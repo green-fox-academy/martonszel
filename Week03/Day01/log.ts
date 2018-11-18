@@ -9,13 +9,12 @@ function readFromFile(fileName: string): string {
   try {
     return fs.readFileSync(fileName, 'utf-8');
   } catch (e) {
-    console.log(0);
     return null;
   }
 }
 
 function IPaddresses(file) {
-  if (readFromFile(file) !== null) {
+  if (fs.existsSync(file)) {
     let content = readFromFile(file).split('   ');
     let IParray: any[] = [];
     for (let i = 1; i < content.length; i += 2) {
