@@ -1,31 +1,42 @@
 
 
-class Animal {
+'use strict';
 
-    hunger: number;
-    thirst: number;
+export class Animal {
+  private hunger: number;
+  private thirst: number;
+  constructor(hunger: number = 50, thirst: number = 50) {
+    this.hunger = hunger;
+    this.thirst = thirst;
+  }
+  eat() {
+    this.hunger--;
+  }
 
-    constructor(hunger: number = 50, thirst: number = 50) {
-        this.hunger = hunger;
-        this.thirst = thirst;
-    }
-    eat() {
-        return --this.hunger;
-    }
-    drink() {
-        return --this.thirst;
-    }
-    play() {
-        ++this.hunger;
-        ++this.thirst;
-    }
+  drink() {
+    this.thirst--;
+  }
+
+  play() {
+    this.hunger++
+    this.thirst++
+  }
+
+  getHungry() {
+    return this.hunger;
+  }
 }
-let animal1 = new Animal();
-let animal2 = new Animal();
 
-console.log(animal1.eat());
-console.log(animal2.drink());
+let tiger: Animal = new Animal(12, 34);
+let lion: Animal = new Animal();
+let rabbit: Animal = new Animal(60)
+new Animal()
 
-animal1.play();
-console.log(animal1.hunger);
-console.log(animal1.thirst);
+console.log(tiger);
+console.log(tiger.eat());
+console.log(tiger.drink());
+console.log(tiger.play());
+console.log(tiger.drink());
+console.log(tiger.eat());
+console.log(tiger.drink());
+console.log(tiger.play());
