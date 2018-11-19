@@ -1,38 +1,24 @@
-/*
-
-When creating one, we need to specify the color and the width
-Every sharpie is created with a default 100 as inkAmount
-We can use() the sharpie objects which decreases inkAmount*/
-
+'use strict'
+export { }
 
 class Sharpie {
+  color: string;
+  width: number;
+  inkAmount: number;
 
-color: string; 
-width: number; 
-inkAmount: number; 
-
-constructor(color: string , width: number, inkAmount: number = 100) {
+  constructor(color: string, howWide: number, ink: number = 100) {
     this.color = color;
-    this.width = width;
-    this.inkAmount = inkAmount;
+    this.width = howWide;
+    this.inkAmount = ink;
+  }
+  use(): void {
+    this.inkAmount -= 1;
+  }
 }
+let sharpie1 = new Sharpie('green', 99);
+sharpie1.use()
 
-decrease (){
-    
-    return  -- this.inkAmount  ;
-}
+console.log(sharpie1.inkAmount);
 
-}
-
-let sharpie1 = new Sharpie ('black', 50 )
-let sharpie2 = new Sharpie ('blue', 30 )
-let sharpie3 = new Sharpie ('red', 60 )
-
-console.log(sharpie1);
-
-sharpie2.decrease();
-console.log(sharpie2);
-
-sharpie3.decrease();
-sharpie3.decrease();
-console.log(sharpie3);
+export {Sharpie};
+export {sharpie1};
