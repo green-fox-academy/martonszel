@@ -30,7 +30,6 @@ function IPaddresses(file) {
 }
 
 IPaddresses('log.txt');
-
 function getPostRatio(file): void {
   if (readFromFile(file) !== null) {
     let content = readFromFile(file).split('\r\n');
@@ -47,5 +46,4 @@ function getPostRatio(file): void {
     console.log(GETcount / POSTcount);
   }
 }
-
 getPostRatio('log.txt');
