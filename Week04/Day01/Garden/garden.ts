@@ -1,4 +1,3 @@
-
 import { Plant } from "./plants";
 
 export class Garden {
