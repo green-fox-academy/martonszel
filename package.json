@@ -19,5 +19,9 @@
   "dependencies": {
     "@types/jquery": "^3.3.22",
     "@types/node": "^10.12.5"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.2.32",
+    "tape": "^4.9.1"
   }
 }

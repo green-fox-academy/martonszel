@@ -18,8 +18,8 @@ const args = process.argv.splice(2); // Just a helper for you to get started
 console.log('Input params are', args);
 
 function calculator(args: any) {
-let operation: string = args [0] ;
-let operand1: number = +args [1] ; 
+let operation: string = args [1] ;
+let operand1: number = +args [0] ; 
 let operand2: number = +args [2] ;
 
 if (operation === "+" && typeof (operand1) === "number" && typeof (operand2) === "number"){
