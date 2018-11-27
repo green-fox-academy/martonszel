@@ -26,7 +26,6 @@ export function isVowel(character: string): boolean {
   return ['a', 'A', 'u', 'U', 'o', 'O', 'e', 'E', 'i', 'I'].some(vowel => vowel === character);
 }
 
-
 export function translate(hungarian: string): string {
   let teve = hungarian;
   let length = teve.length;
