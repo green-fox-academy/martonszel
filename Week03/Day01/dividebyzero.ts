@@ -15,7 +15,7 @@ return a / 10 ;
 }
 
 try {
-    console.log(divideBy(0));
+    console.log(divideBy(10));
   } catch (e) {
     console.log(e.message);
   } 

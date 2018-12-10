@@ -14,7 +14,6 @@ export{};
 // The square should have    as many lines as lineCount is
 
 let star: any = '';
-
 let lineCount: number = 5;
 for(let i=0; i<=lineCount; i++){
     for(let j=0; j<= lineCount; j++){

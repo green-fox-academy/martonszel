@@ -14,8 +14,9 @@ function readFromFile(fileName: string) {
 
 function reverseOrder(file) {
   let fileContent = readFromFile(file);
-  if (fileContent !== null) {
-    return fileContent = fileContent.split('\r\n').reverse().join('\r\n');
+  if (fs.existsSync(file)) {
+    return  fileContent.split('\r\n').reverse().join('\r\n');
+    
   }
 }
 

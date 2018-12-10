@@ -13,34 +13,38 @@ function readFromFile(fileName: string): string {
   }
 }
 
-function IPaddresses(file) {
-  if (fs.existsSync(file)) {
-    let content = readFromFile(file).split('   ');
-    let IParray: any[] = [];
-    for (let i = 1; i < content.length; i += 2) {
-      IParray.push(content[i]);
-    }
-    let uniqueAddresses = IParray.filter((elem, index, arr) => {
-      if (arr.indexOf(elem) === index) {
-        return elem;
-      }
-    })
-    console.log(uniqueAddresses);
-  }
+function uniqueIp(fileName: string) {
+
+  let fileContent: string = readFromFile(fileName);
+  let lines: string[] = fileContent.split('\r\n');
+  let result: any[] = [];
+  let ipAdresses: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+
+      result.push(lines[i].split("   ")); // ahol 3 space van ott szedi szét
+      ipAdresses.push(result[i][1]);      // első elemét ami az ip belerakja a listába
+        }
+
+  let uniqueIpResult = ([...new Set(ipAdresses)]);      // Use the spread operator to transform a set into an Array.+ console.log([...new Set(array.name)]) 
+  return uniqueIpResult;
+  
 }
 
-IPaddresses('log.txt');
+console.log(uniqueIp("log.txt"));
+
+
 function getPostRatio(file): void {
-  if (readFromFile(file) !== null) {
+  if (fs.existsSync(file)) {
     let content = readFromFile(file).split('\r\n');
     let GETcount: number = 0;
     let POSTcount: number = 0;
     content.forEach(function (element) {
       if (element.indexOf('GET') !== -1) {
-        GETcount += 1;
+        GETcount ++;
       }
       if (element.indexOf('POST') !== -1) {
-        POSTcount += 1;
+        POSTcount ++;
       }
     })
     console.log(GETcount / POSTcount);

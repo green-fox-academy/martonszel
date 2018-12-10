@@ -1,5 +1,8 @@
 // Create a method that decrypts encoded-lines.txt
 
+'use strict '
+export{};
+
 const fs = require('fs');
 
 function readFromFile(fileName: string) {
@@ -38,3 +41,4 @@ function decryptText(textFile) {
 }
 
 console.log(decryptText('encoded-lines.txt'));
+

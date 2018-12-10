@@ -11,18 +11,15 @@ function readFromFile(fileName: string) {
     try {
         return fs.readFileSync(fileName, 'utf-8');
     } catch (e) {
+        console.log ("Unable to read file: my-file.txt");
         return null;
     }
 }
 
 function printLines(file: string) {
     const fileContent = readFromFile(file);
-    if (fileContent === null) {
-        return "Unable to read file: my-file.txt";
-    }
-    else {
-        return fileContent
-    }
+    if (fs.existsSync(file)) {
+    } return fileContent.split('\r\n');
 }
 console.log(printLines('my-file.txt'));
 

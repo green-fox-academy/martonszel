@@ -1,16 +1,13 @@
 'use script';
 export { };
-
 const fs = require('fs');
-const charEncoding: string = 'utf8'
 
-//general functions to read and write a file
-function readFromFile(filename: string): string {
-  return fs.readFileSync(filename, charEncoding);
-}
-
-function writeToFile(filename: string, data: string): void {
-  fs.writeFileSync(filename, data);
+function readFromFile(fileName: string) {
+    try {
+        return fs.readFileSync(fileName, 'utf-8');
+    } catch (e) {
+        return null;
+    }
 }
 
 function decryptDouble(filename: string) {

@@ -14,14 +14,18 @@ function readFromFile(fileName: string) {
 }
 
 function reverseLines(file) {
-  let fileContent = readFromFile(file);
-  if (fileContent !== null) {
-    let lines = fileContent.split('\r\n');
+  let fileContent = readFromFile(file); 
+  let lines = fileContent.split('\r\n');
+  
+  if (fs.existsSync(file)) {
     for (let i = 0; i < lines.length; i++) {
       lines[i] = lines[i].split('').reverse().join('');
+      
     }
     return lines.join('\r\n');
+    
   }
+  
 }
 
 console.log(reverseLines('reversed-lines.txt'));

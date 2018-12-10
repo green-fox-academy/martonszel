@@ -12,13 +12,13 @@ function readFromFile(fileName: string) {
     }
 }
 
-function printLines(file: string) {
-    const fileContent = readFromFile(file);
-    if (fileContent === null) {
+function countLines(fileName: string) {
+    const fileContent: string = readFromFile(fileName);
+    if (fileContent !== null) {
+        return fileContent.split('\n').length;
+    } else {
         return 0;
     }
-    else {
-        return fileContent.split('\r\n').length;
-    }
 }
-console.log(printLines('my-file.txt'));
+
+console.log(countLines("my-file.txt"));
