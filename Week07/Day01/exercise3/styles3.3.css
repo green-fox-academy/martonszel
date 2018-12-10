@@ -1,0 +1,29 @@
+body {
+  background: #eeeeee;
+}
+
+.container{
+  display: flex;
+  background: yellow;
+  height: 400px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style-type: none;
+ 
+}
+
+.item{
+height: 100px;
+min-width: 100px;}
+
+.purple{
+  background: purple;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+
+}
+.blue{
+  background: blue;
+  
+  
+}

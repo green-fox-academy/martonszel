@@ -1,0 +1,29 @@
+body {
+  background: #eeeeee;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container{
+  display: flex;
+  background: yellow;
+  width: 50em;
+  height: 50rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.item{
+height: 100px;
+min-width: 100px;
+}
+
+.purple{
+  background: purple;
+  
+}

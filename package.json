@@ -18,7 +18,8 @@
   "homepage": "https://github.com/green-fox-academy/martonszel#readme",
   "dependencies": {
     "@types/jquery": "^3.3.22",
-    "@types/node": "^10.12.5"
+    "@types/node": "^10.12.5",
+    "poker-ranking": "^1.1.2"
   },
   "devDependencies": {
     "@types/tape": "^4.2.32",

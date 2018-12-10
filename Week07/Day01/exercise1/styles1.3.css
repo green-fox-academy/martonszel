@@ -1,0 +1,37 @@
+body {
+  background: #eeeeee;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.item{
+height: 100px;
+min-width: 100px;
+
+}
+
+.green{
+  background: green;
+  flex-grow: 2;
+}
+
+.yellow{
+  background: yellow;
+  flex-grow: 4;
+}
+
+.purple{
+  background: purple;
+  flex-grow: 2;
+}
+

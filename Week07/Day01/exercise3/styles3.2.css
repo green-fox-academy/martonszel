@@ -1,0 +1,25 @@
+body {
+  background: #eeeeee;
+}
+
+.container{
+  display: flex;
+  background: yellow;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.item{
+height: 100px;
+min-width: 100px;}
+
+.purple{
+  background: purple;
+  
+}
+.blue{
+  background: blue;
+}
