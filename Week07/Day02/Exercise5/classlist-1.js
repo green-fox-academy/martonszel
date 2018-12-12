@@ -19,4 +19,4 @@ apple.classList.add('red');
 
 // Make balloon less balloon-like (change its shape)
 const balloon = document.querySelector('.balloon');
-balloon.setAttribute('style', 'border-radius: 0');
+balloon.setAttribute('style', 'border-radius: 0%');
