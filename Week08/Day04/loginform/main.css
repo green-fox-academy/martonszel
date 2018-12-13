@@ -1,0 +1,89 @@
+body {
+background: url('new_zealand.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+color:#525252;
+}
+
+.login {
+  margin:auto;
+  width: 300px;
+  padding:80px 40px;
+  margin-top: 50px;
+  background: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+h1{
+margin: 0 0 20px 0;
+padding: 10px;
+
+}
+
+input{
+width: 100%;
+padding: 10px;
+
+}
+
+input[type='text']:focus {
+  outline: none;
+  border:1px solid limegreen;
+  
+}
+
+input[type='password']:focus {
+  outline: none;
+  border:1px solid limegreen;
+  
+}
+
+input[id='name'] {
+  margin-bottom: 30px;
+  width:250px;
+}
+
+input[id='Password'] {
+  
+  margin-bottom: 20px;
+  width:250px;
+  
+}
+
+input[type='submit']{
+  border:none;
+  outline: none;
+  border-radius: 30px;
+  width: 80px;
+ color: white;
+ background-color: black;
+}
+
+.container{
+  display: flex;
+justify-content: flex-end;
+width: 260px;
+padding: 0 10px;
+}
+
+a {
+color:#525252;
+text-decoration: none;
+font-size: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+.field-icon {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.fas.active {
+color: blue;
+
+}
