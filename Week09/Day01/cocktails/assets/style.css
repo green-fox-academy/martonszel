@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  min-width: auto;
+}
+
+h1 {
+  color: black;
+  padding: 10px;
+}
+
+.alcohols {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.alcohol {
+  min-width: 80px;
+  margin-right: 2px;
+  text-align: center;
+}
+
+.alcohol a {
+  text-decoration: none;
+  color:purple;
+  text-transform: uppercase;
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.text {
+  padding-right: 5px;
+  width: 50%;
+}
+
+.table-row.header {
+  background-color: limegreen;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
