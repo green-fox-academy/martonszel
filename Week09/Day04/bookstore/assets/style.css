@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+thead {
+  
+  background: limegreen;
+  color: white;
+}
+
+th{
+  width: 100px; 
+}
+
+td{
+text-align: center;
+}
