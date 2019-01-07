@@ -1,0 +1,44 @@
+.container{
+  margin: auto;
+  background-color: lightblue;
+  height: 350px;
+  display: flex;
+ justify-content: center;
+  max-width: 400px;
+}
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+table {
+margin: 40px;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+th {
+  background: black;
+  color:lightgray;
+}
+
+td[data-currency]::before {
+  content:"\0024";
+}
+
+tbody>tr:nth-child(2n+1)>td:nth-child(2n+1) {
+  background: lightgray;
+}
+
+tbody>tr:nth-child(2n){
+  background: white;
+}
+tbody>tr:nth-child(2n)>td:nth-child(2n) {
+  background: white;
+}
+
+tbody>tr:nth-child(2n+1){
+  background: lightgray;
+}
+
