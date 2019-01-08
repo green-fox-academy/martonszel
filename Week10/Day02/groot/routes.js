@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/groot', (req, res) => {
-  let { somemessage  } = req.query; 
+  const { somemessage  } = req.query; 
   
   if (somemessage) {
     res.status(200).json({
